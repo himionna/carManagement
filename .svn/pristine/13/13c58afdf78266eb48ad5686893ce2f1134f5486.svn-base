@@ -1,0 +1,41 @@
+package carManagement;
+
+public class CarDaoImpl implements ICarDao{
+
+	@Override
+	public boolean save(Car car) {
+		// liujing
+		return false;
+	}
+
+	@Override
+	public boolean delete(String carId) {
+		// liujing
+		return false;
+	}
+
+	@Override
+	public Car queryById(String carId) {
+		// guofang
+		return null;
+	}
+
+	@Override
+	public Car[] queryByType(String type) {
+		// guofang
+		return null;
+	}
+
+	@Override
+	public Car[] queryByBrand(String brand) {
+		// duxiaying
+		return null;
+	}
+
+	@Override
+	public Car[] queryAll() {
+		// duxiaying
+		return null;
+	}
+
+}

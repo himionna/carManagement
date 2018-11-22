@@ -1,0 +1,10 @@
+package carManagement;
+
+public class Test {
+	
+	public static void print(Car[] cars){}
+	
+	public static void main(String[] args) {
+		
+	}
+}

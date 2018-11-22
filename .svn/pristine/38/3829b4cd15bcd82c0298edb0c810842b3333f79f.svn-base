@@ -1,0 +1,64 @@
+package carManagement;
+
+public class CarDaoImpl implements ICarDao{
+	private Car[] cars; 
+	private int index = 0;
+
+	public CarDaoImpl() {
+		cars = new Car[10];
+	}
+	public CarDaoImpl(int size) {
+		cars = new Car[size];
+	}
+	
+	@Override
+	public boolean save(Car car) {
+		// liujing
+		if( index < cars.length) {
+			cars[index++] = car;
+			return true;
+		}
+		
+		return false;
+	}
+
+	@Override
+	public boolean delete(String carId) {
+		// liujing
+		for( int i = 0; i < index; i++ ) {
+			if( cars[i].getCarId().equals(carId)) {
+				for( int j = i+1; j < index; j++) {
+					cars[j-1] = cars[j];
+				}
+				index--;
+			}
+			
+		}
+		return false;
+	}
+
+	@Override
+	public Car queryById(String carId) {
+		// guofang
+		return null;
+	}
+
+	@Override
+	public Car[] queryByType(String type) {
+		// guofang
+		return null;
+	}
+
+	@Override
+	public Car[] queryByBrand(String brand) {
+		// duxiaying
+		return null;
+	}
+
+	@Override
+	public Car[] queryAll() {
+		// duxiaying
+		return null;
+	}
+
+}
