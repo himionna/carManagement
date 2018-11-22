@@ -54,8 +54,6 @@ public class Test {
 		Car[] car1 = icd.queryByBrand("±¦Âí");
 		print(car1);
 		
-		System.out.println("------------queryByType------------");
-		Car[] car2 = icd.queryByType("X2");
-		print(car2);
+		
 	}
 }
